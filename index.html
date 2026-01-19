@@ -7,8 +7,35 @@
     <link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
 
-<body style="background-color: #c392ff;">
+<body>
     <style>
+        body {
+            background-color: #c392ff;
+        }
+
+        .centered-div {
+            width: 100%;
+            max-width: 700px;
+            background-color: #f7f5f5;
+            padding: 20px;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            padding-top: 1px;
+        }
+
+        img {
+            height: 31px;
+        }
+
+        .cat {
+            width: 200px;
+            height: 200px;
+        }
+
+        .braindamage-counter>img {
+            transform: translateY(8px);
+        }
+
         .rainbow {
             background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
             -webkit-background-clip: text;
@@ -17,21 +44,15 @@
 
         }
     </style>
-    <div
-        style="width: 100%;max-width: 700px; background-color: #f7f5f5;padding: 20px;margin-left: 50%;transform: translateX(-50%);padding-top: 1px;">
-        <style>
-            .braindamage-counter>img {
-                transform: translateY(8px);
-            }
-        </style>
+    <div class="centered-div">
         <h1><span class="rainbow">Brain damage</span>, get it now!</h1>
         <p>Some doctors recommend <span class="rainbow">brain damage</span>, and so do we here at <a
                 href="https://braindamage.tech"><span class="rainbow">braindamage</span>.tech</a> - the
             newest website for <span class="rainbow">brain damage</span>.
         </p>
-        <img src="cat-spin.gif" width="200px">
-        <img src="cat-spin.gif" width="200px">
-        <img src="cat-spin.gif" width="200px">
+        <img class="cat" src="cat-spin.gif">
+        <img class="cat" src="cat-spin.gif">
+        <img class="cat" src="cat-spin.gif">
         <br>
         <span class="braindamage-counter">
             <span class="rainbow">braindamage</span> counter:
