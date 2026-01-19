@@ -32,7 +32,12 @@
             height: 200px;
         }
 
-        .braindamage-counter>img {
+        #braindamage-counter {
+            height: 36px;
+            display: inline-block;
+        }
+
+        #braindamage-counter>img {
             transform: translateY(8px);
         }
 
@@ -42,6 +47,10 @@
             background-clip: text;
             color: transparent;
 
+        }
+
+        #counter-holder {
+            display: none;
         }
     </style>
     <div class="centered-div">
@@ -54,9 +63,8 @@
         <img class="cat" src="cat-spin.gif">
         <img class="cat" src="cat-spin.gif">
         <br>
-        <span class="braindamage-counter">
+        <span id="braindamage-counter">
             <span class="rainbow">braindamage</span> counter:
-            <script type="text/javascript" src="https://counter.websiteout.com/js/24/0/0/0"></script>
         </span>
         <br>
         <br>
@@ -69,6 +77,10 @@
         <br>
         <p>feel free to <a href="https://github.com/ingobeans/braindamage">contribute to <span
                     class="rainbow">braindamage</span></a></p>
+        <div id="counter-holder">
+            <script type="text/javascript" src="https://counter.websiteout.com/js/24/0/0/0"></script>
+        </div>
+        <script src="counter.js"></script>
     </div>
 </body>
 
