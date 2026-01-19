@@ -52,6 +52,28 @@
         #counter-holder {
             display: none;
         }
+
+        .john {
+            width: min(728px, 100%);
+            height: min(90px, 12.367vw);
+            background-color: #d9d9d9;
+            margin-left: 50%;
+            transform: translate(-50%, 0);
+            overflow: hidden;
+        }
+
+        .john>span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            font-size: 36px;
+            z-index: -1;
+        }
+
+        .john>iframe {
+            z-index: 5;
+        }
     </style>
     <div class="centered-div">
         <h1><span class="rainbow">Brain damage</span>, get it now!</h1>
@@ -77,6 +99,11 @@
         <br>
         <p>feel free to <a href="https://github.com/ingobeans/braindamage">contribute to <span
                     class="rainbow">braindamage</span></a></p>
+        <div class="john">
+            <iframe src="https://john.citrons.xyz/embed?ref=braindamage.tech"
+                style="margin-left:auto;display:block;margin-right:auto;max-width:732px;width:100%;height:94px;border:none;"></iframe>
+            <span>johnvertisement</span>
+        </div>
         <div id="counter-holder">
             <script type="text/javascript" src="https://counter.websiteout.com/js/24/0/0/0"></script>
         </div>
