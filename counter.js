@@ -10,3 +10,9 @@ let holder = document.getElementById("counter-holder");
 let counter = holder.children[holder.children.length - 1];
 
 parent.appendChild(counter);
+
+let unique_parent = document.getElementById("unique-braindamage-counter");
+let unique_holder = document.getElementById("unique-counter-holder");
+let unique_counter = unique_holder.children[unique_holder.children.length - 1];
+
+unique_parent.appendChild(unique_counter);

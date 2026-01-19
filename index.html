@@ -32,12 +32,12 @@
             height: 200px;
         }
 
-        #braindamage-counter {
+        .braindamage-counter {
             height: 36px;
             display: inline-block;
         }
 
-        #braindamage-counter>img {
+        .braindamage-counter>img {
             transform: translateY(8px);
         }
 
@@ -50,6 +50,10 @@
         }
 
         #counter-holder {
+            display: none;
+        }
+
+        #unique-counter-holder {
             display: none;
         }
 
@@ -85,8 +89,12 @@
         <img class="cat" src="cat-spin.gif">
         <img class="cat" src="cat-spin.gif">
         <br>
-        <span id="braindamage-counter">
+        <span class="braindamage-counter" id="braindamage-counter">
             <span class="rainbow">braindamage</span> counter:
+        </span>
+        <br>
+        <span class="braindamage-counter" id="unique-braindamage-counter">
+            unique <span class="rainbow">braindamage</span> enthusiasts:
         </span>
         <br>
         <br>
@@ -106,6 +114,9 @@
         </div>
         <div id="counter-holder">
             <script type="text/javascript" src="https://counter.websiteout.com/js/24/0/0/0"></script>
+        </div>
+        <div id="unique-counter-holder">
+            <script type="text/javascript" src="https://counter.websiteout.com/js/13/0/0/1"></script>
         </div>
         <script src="counter.js"></script>
     </div>
